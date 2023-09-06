@@ -1,0 +1,11 @@
+{
+    "name": "Materials Project Python Linting Workflow",
+    "description": "Materials Project Python Linting Workflow",
+    "iconName": "example-icon",
+    "categories": [
+        "code-quality"
+    ],
+    "filePatterns": [
+        ".*\\.py$"
+    ]
+}
