@@ -22,7 +22,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install --upgrade ruff black mypy 
+          pip install --upgrade ruff black mypy
 
       - name: ruff
         run: |
