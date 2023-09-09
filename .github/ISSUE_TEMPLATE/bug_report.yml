@@ -15,14 +15,6 @@ body:
       placeholder: ex. email@example.com
     validations:
       required: false
-  - type: textarea
-    id: what-happened
-    attributes:
-      label: What happened?
-      description: What happened?
-      placeholder: Tell us what you see!
-    validations:
-      required: true
   - type: input
     id: version
     attributes:
@@ -40,12 +32,27 @@ body:
         - Linux
         - Windows
         - Mac
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What happened?
+      placeholder: |
+        1. In this environment...
+        1. With this config...
+        1. Run '...'
+        1. See error...
+    validations:
+      required: true
   - type: textarea
     id: logs
     attributes:
       label: Relevant log output
       description: Please copy and paste any relevant log output, especially error messages. This will be automatically formatted into code, so no need for backticks.
       render: shell
+      Tip: You can attach images or log files by clicking this area to highlight it and then dragging files in.
   - type: checkboxes
     id: terms
     attributes:
