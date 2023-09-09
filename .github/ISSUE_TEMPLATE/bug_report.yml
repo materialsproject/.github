@@ -40,10 +40,7 @@ body:
       label: What happened?
       description: Provide a concise description of the bug.
       placeholder: |
-        1. Run this example code.
-        ```
-        print("hello world")
-        ```
+        1. I am attempting to do this (code snippet given below).
         1. Expected behavior: ...
         1. Instead, got this behavior: ...
 
@@ -51,11 +48,18 @@ body:
     validations:
       required: true
   - type: textarea
+    id: snippet
+    attributes:
+      label: Code snippet
+      description: |
+        Please provide a code snippet to reproduce the bug. This will be automatically formatted into code, so no need for backticks.
+      render: python
+  - type: textarea
     id: logs
     attributes:
-      label: Relevant log output
+      label: Log output
       description: |
-        Please copy and paste any relevant log output, especially error messages. This will be automatically formatted into code, so no need for backticks.
+        Please provide any relevant log output, especially error messages. This will be automatically formatted, so no need for backticks.
       render: shell
   - type: checkboxes
     id: terms
