@@ -23,11 +23,11 @@ body:
       placeholder: v2023.1.1
     validations:
       required: true
-  - type: dropdown
+  - type: checkboxes
     id: OS
     attributes:
       label: What OS(es) are you seeing the problem on?
-      multiple: true
+      description: You may select more than one.
       options:
         - Linux
         - Windows
