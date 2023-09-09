@@ -24,14 +24,14 @@ body:
     validations:
       required: true
   - type: checkboxes
-    id: OS
+    id: operating-systems
     attributes:
-      label: What OS(es) are you seeing the problem on?
+      label: Which OS(es) are you using?
       description: You may select more than one.
       options:
-        - Linux
-        - Windows
-        - Mac
+        - label: MacOS
+        - label: Windows
+        - label: Linux
     validations:
       required: true
   - type: textarea
