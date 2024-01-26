@@ -13,3 +13,7 @@ Supercomputing clusters at national laboratories provide the infrastructure that
 # Screening
 
 Computational materials science is now powerful enough that it can predict many properties of materials before those materials are ever synthesized in the lab. By scaling materials computations over supercomputing clusters, we have predicted several new battery materials which were made and tested in the lab. Recently, we have also identified new transparent conducting oxides and thermoelectric materials using this approach.
+
+# Contributors 
+
+The Materials Project thank all users for support and feedback. We are thankful to all our contributors who contribute to our software ecosystem. A complete list of contributors is listed [here](contributors.md). 
