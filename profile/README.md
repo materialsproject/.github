@@ -16,4 +16,4 @@ Computational materials science is now powerful enough that it can predict many 
 
 # Contributors 
 
-The Materials Project thank all users for support and feedback. We are thankful to all our contributors who contribute to our software ecosystem. A complete list of contributors is listed [here](contributors.md). 
+The Materials Project thank all users for support and feedback. We are thankful to all our contributors who contribute to our software ecosystem. A complete list of contributors is listed [here](https://github.com/materialsproject/.github/blob/main/profile/contributors.md). 
