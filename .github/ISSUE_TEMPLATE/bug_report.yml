@@ -40,13 +40,10 @@ body:
     id: operating-systems
     attributes:
       label: Which OS?
-      multiple: true
       options:
         - label: MacOS
         - label: Windows
         - label: Linux
-    validations:
-      required: true
   - type: textarea
     id: logs
     attributes:
