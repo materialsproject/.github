@@ -1,4 +1,4 @@
-name: Python Linting
+name: Linting
 
 on:
   push:
@@ -13,29 +13,25 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: "3.9"
 
       - name: Install dependencies
         run: |
-          pip install --upgrade ruff black mypy
+          pip install --upgrade ruff mypy pyright
 
       - name: ruff
         run: |
           ruff --version
-          ruff .
-
-      - name: black
-        run: |
-          black --version
-          black --check --diff --color ${{ github.event.repository.name }}
+          ruff check .
+          ruff format --check .
 
       - name: mypy
-        run: |
-          mypy --version
-          rm -rf .mypy_cache
-          mypy ${{ github.event.repository.name }}
+        run: mypy src
+
+      - name: pyright
+        run: pyright
